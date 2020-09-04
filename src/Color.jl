@@ -25,7 +25,7 @@ MODES = Dict(
 )
 
 
-function color(color::String, str::String; background::String = "default", mode::String="default")
+function color(color::String, str::String; background::String="default", mode::String="default")
     FColor = "\e[$(30 + COLORS[color]);"
     BColor =    "$(40 + COLORS[background])m"
     Action = "\e[$(MODES[mode]);m"

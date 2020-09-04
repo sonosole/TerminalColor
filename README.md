@@ -31,7 +31,7 @@ For each color you can specify one mode, like
 + swap
 + hide
 
-
+For more flexibility, use :
 ```julia
 color("yellow", "yellow on red"; background = "red", mode = "bold") |> print
 ```

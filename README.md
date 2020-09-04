@@ -9,6 +9,29 @@ red("i am red") |> print
 print(red("i am red"))
 
 blue("i am so blue") |> print
+
+print(blue("blue") * red("me") * "...")
 ```
 
-totally you could use colors like black, red, green, yellow, blue, magenta, cyan, white.
+You could specify foreground or background colors as
++ black
++ red
++ green
++ yellow
++ blue
++ magenta
++ cyan
++ white
+
+For each color you can specify one mode, like
++ default
++ bold
++ underline
++ blink
++ swap
++ hide
+
+
+```julia
+color("yellow", "yellow on red"; background = "red", mode = "bold") |> print
+```
